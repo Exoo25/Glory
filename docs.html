@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glory.css Documentation</title>
+  <link rel="stylesheet" href="https://your-glory-css-link.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+      color: #333;
+    }
+    
+    header {
+      background:linear-gradient(125deg,#d11910, #8a130b);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    
+    }
+    header .top {
+      display: flex;
+      
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      margin: 10px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color:#f77962;
+    }
+    pre {
+      background-color: #f0f4f8;
+      padding: 10px;
+      border-radius: 4px;
+      
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f0f4f8;
+    }
+    .btn-primary, .btn-danger, .btn-secondary {
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .btn-primary {
+      background-color: #3b82f6;
+      color: white;
+    }
+    .btn-danger {
+      background-color: #ef4444;
+      color: white;
+    }
+    .btn-secondary {
+      background-color: #22c55e;
+      color: white;
+    }
+    .card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+    
+    .glass {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+    }
+    h3 {
+        color:#dd2c2c
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .icon {
+    width:15%;
+    border-radius: 50%;
+    transition-duration: 1s;
+
+}
+    .icon:hover {
+        transform:translate(0,10px) rotateY(45deg);
+    }
+    .icon:active {
+        transform:rotate3d(0, 1, 0, 180deg);
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="top">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e4abb0fb75117230282cd98c" alt="Glory" class="icon" >
+        <h1>Glory.css Documentation</h1>
+    </span>
+    <div class="des">
+        <p>A simple and powerful CSS framework created by Mehdi Ali</p> 
+    </div>
+  </header>
+
+  <section>
+    <h2>📦 What is Glory.css?</h2>
+    <p>Glory.css is a clean and lightweight CSS utility framework made by Mehdi Ali. It uses simple class names like <code>btn-primary</code>, <code>card</code>, <code>glass</code>, and <code>grid-container</code>, with powerful visual effects and easy-to-use layout tools.</p>
+  </section>
+
+  <section>
+    <h2>🚀 Getting Started</h2>
+    <h3>CDN Link</h3>
+    <pre>
+&lt;link rel="stylesheet" href="https://your-glory-css-link.css"&gt;
+    </pre>
+    <h3>Or Local File</h3>
+    <pre>
+&lt;link rel="stylesheet" href="css/glory.css"&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>🧱 Components & Utility Classes</h2>
+
+    <h3>🎨 Buttons</h3>
+    <pre>
+&lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn-secondary"&gt;Secondary&lt;/button&gt;
+    </pre>
+
+    <h3>🧩 Cards</h3>
+    <pre>
+&lt;div class="card"&gt;Basic Card&lt;/div&gt;
+&lt;div class="card glass"&gt;Glass Effect&lt;/div&gt;
+&lt;div class="card gradient-bg"&gt;Gradient Background&lt;/div&gt;
+    </pre>
+
+    <h3>📦 Layout Containers</h3>
+    <h4>Flex Layout</h4>
+    <pre>
+&lt;div class="card-container"&gt;
+    &lt;div class="card"&gt;Card 1&lt;/div&gt;
+    &lt;div class="card"&gt;Card 2&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h4>Grid Layout</h4>
+    <pre>
+&lt;div class="grid-container"&gt;
+    &lt;div class="card"&gt;Item 1&lt;/div&gt;
+    &lt;div class="card"&gt;Item 2&lt;/div&gt;
+    &lt;div class="card"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <p>Example grid CSS in <code>glory.css</code>:</p>
+    <pre>
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+    </pre>
+  </section>
+
+  <section>
+    <h2>🧑‍🎨 Customization</h2>
+    <p>Override default values in <code>glory.css</code>:</p>
+    <pre>
+:root {
+     --primary-color: #3b82f6;
+     --danger-color: #ef4444;
+     --secondary-color: #22c55e;
+    --font: 'Segoe UI', sans-serif;
+}      
+    </pre>
+  </section>
+
+  <section>
+    <h2>🎉 Coming Soon!</h2>
+    <ul>
+      <li><strong>Glory Icons</strong> — A clean, custom icon set made just for Glory users.</li>
+      <li><strong>Comic Theme</strong> — Fun, comic-book style design!</li>
+      <li><strong>More Components</strong> — Modal windows, navbar, spinners, and more!</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Mehdi Ali | Glory.css v1.0</p>
+    <p><strong>Icons Coming Soon • Comic Theme Coming Soon</strong></p>
+  </footer>
+
+</body>
+</html>
