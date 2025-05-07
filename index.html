@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=docs" />
     <title>Document</title>
 </head>
@@ -11,7 +11,7 @@
     <header>
         <div class="hero">
             
-            <img src="https://i.scdn.co/image/ab67616d0000b273e4abb0fb75117230282cd98c" alt="Glory" class="icon" >
+            <img src="https://i.scdn.co/image/ab67616d0000b273e4abb0fb75117230282cd98c" alt="Glory" class="icon" onclick="glory()">
             <h2>Glory</h2>
         
         </div>
@@ -39,11 +39,20 @@
         <h2>Docs<span class="material-symbols-outlined">docs</span></h2>
         <h4>Getting Started</h4>
         <h5>Use the cdn or download it via github</h5>
-        <p>CDN = <span class="code snippet">&lt;link rel="stylesheet" href="(not completed yet)"&gt;</span></p>
-        
+        <p>CDN = <span class="code-snippet">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Exoo25/Glory/glory.css"&gt;</span></p>
+        <span class="code-snippet">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Exoo25/Glory/glory.js"&gt;</span></p>
         <a href="docs.html"><button>full docs</button></a>
         
     </section>
+    
 </body>
+<script>
+    var music = new Audio("glory.mp3"); 
+    music.volume = 0.5; 
+    music.loop = true;
+    function glory() {
+        music.play();
+    }
+</script>
 
 </html>
