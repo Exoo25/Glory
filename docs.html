@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glory.css Documentation</title>
-  <link rel="stylesheet" href="https://your-glory-css-link.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Exoo25/Glory/glory.css">
   <style>
+    @import url('https://fonts.cdnfonts.com/css/cascadia-code');
     body {
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
@@ -40,10 +41,17 @@
       color:#f77962;
     }
     pre {
-      background-color: #f0f4f8;
+      background-color: #000;
       padding: 10px;
       border-radius: 4px;
+      font-family: 'Cascadia Code', monospace;
+      color:lime;
+      white-space: pre;
       
+    }
+    pre::selection {
+      color:white;
+      background: rgba(255, 235, 14,0.5);
     }
     footer {
       text-align: center;
@@ -76,6 +84,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin: 10px;
     }
+    
     
     .glass {
       background-color: rgba(255, 255, 255, 0.7);
@@ -117,7 +126,7 @@
 
   <header>
     <span class="top">
-        <img src="https://i.scdn.co/image/ab67616d0000b273e4abb0fb75117230282cd98c" alt="Glory" class="icon" >
+        <img src="https://i.scdn.co/image/ab67616d0000b273e4abb0fb75117230282cd98c" alt="Glory" class="icon" onclick="glory()">
         <h1>Glory.css Documentation</h1>
     </span>
     <div class="des">
@@ -134,7 +143,7 @@
     <h2>🚀 Getting Started</h2>
     <h3>CDN Link</h3>
     <pre>
-&lt;link rel="stylesheet" href="https://your-glory-css-link.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Exoo25/Glory/glory.css"&gt;
     </pre>
     <h3>Or Local File</h3>
     <pre>
@@ -184,6 +193,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
     </pre>
+    
   </section>
 
   <section>
@@ -214,4 +224,12 @@
   </footer>
 
 </body>
+<script>
+  var music = new Audio("glory.mp3"); 
+  music.volume = 0.5; 
+  music.loop = true;
+  function glory() {
+      music.play();
+  }
+</script>
 </html>
